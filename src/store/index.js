@@ -3,7 +3,23 @@ import { createStore } from "vuex";
 const animals = {
   namespased: true,
   state: {
-    list: [],
+    list: [
+      {
+        category: "Na ziemi",
+        name: "Kuna",
+        price: 10,
+      },
+      {
+        category: "Na ziemi",
+        name: "Alpaka",
+        price: 121,
+      },
+      {
+        category: "Na ziemi",
+        name: "Słoń",
+        price: 122.92,
+      },
+    ],
   },
   mutations: {
     add(state, animal) {
